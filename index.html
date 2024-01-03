@@ -9,10 +9,19 @@
 <body>
     <header class="hero">
         <h1>Sketch</h1>
-
     </header>
     <main>
-
+        <div class="container">
+            <div class="controls">
+                <label for="gridSizeRange">Grid Size:</label>
+                <input type="range" id="gridSizeRange" min="1" max="50" value="16">
+                <span id="gridSizeLabel">16</span>
+                <label for="colorPicker">Color:</label>
+                <input type="color" id="colorPicker" value="#000000">
+                <button id="resetCanvas">Reset Canvas</button>
+            </div>
+            <canvas id="gridCanvas"></canvas>
+        </div>
     </main>
     <footer>
         All right's resrved ©️ 2023 | created with ❤️ RahulSK
